@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="Style_Registration.css">
+        <script src="Registration_Java.js"></script>
+        <title>Fitness Club | Registration Page</title>
+    </head>
+    <body>
+        <div id="Register">
+            <header>
+                <h1>Member Form Registration</h1>
+            </header>
+            <section>
+                <form action="Home.html" method="POST" onsubmit="return check()">    
+                    <div class="Info">
+                        <font>Candidate Information</font><br><br>
+                        
+                        <input id="Fn" type="text" placeholder="First Name"><br>
+                        <input id="Ln" type="text" placeholder="Last Name"><br>
+                        <input id="Pa" type="text" placeholder="Permanent Address"><br>
+                        <input id="Em" type="email" placeholder="E-mail Address" onkeyup="emailCheck()"><br>
+                        <input id="Mo" type="number" placeholder="Mobile Number"><br><br>
+                    </div>
+                    <div class="Gen">
+                        <font>Gender</font><br><br>
+                        
+                        <input id="M" type="radio" name="Gender">Male <br>
+                        <input id="F" type="radio" name="Gender">Female <br>
+                        <input id="O" type="radio" name="Gender">Other <br><br>
+                    </div>
+                    <div class="Item">
+                        <font>Other Items</font><br><br>
+    
+                        <input id="Ae" type="checkbox" name="Aerobic">Aerobic <br>
+                        <input id="Se" type="checkbox" name="Art">Self Defence <br>
+                        <input id="Sw" type="checkbox" name="Sport">Swimming <br>
+                        <input id="We" type="checkbox" name="Weight">Weight Lifting <br><br>
+                    </div>
+                    <div class="buttn">
+                        <input class="btn" type="submit" name="Submit" value="Submit Form"><br>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </body>
+</html>
